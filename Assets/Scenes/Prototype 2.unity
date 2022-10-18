@@ -181,6 +181,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50.000004, y: -60.000004, z: 0}
+--- !u!1 &252726156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252726158}
+  - component: {fileID: 252726157}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &252726157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252726156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b194e74b1a5428a88049eafaf5070e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 4065324265878497291}
+  - {fileID: 3602252385491086389}
+  - {fileID: 2810410030514740719}
+--- !u!4 &252726158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252726156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.109276, y: -12.312881, z: 3.6974792}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317907824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: 814f4326a50812947b2469896d89a215,
@@ -705,8 +752,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2810410030962815328, guid: bb1f8c421159d45bab069304ac4ab9e5,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1f8c421159d45bab069304ac4ab9e5, type: 3}
+--- !u!1 &2810410030514740719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2810410029381538346, guid: bb1f8c421159d45bab069304ac4ab9e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810410030514740718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3602252385491086388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -714,6 +772,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3602252385911038986, guid: 483e5ec423e32499185f707aa180489e,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3602252387284224725, guid: 483e5ec423e32499185f707aa180489e,
         type: 3}
       propertyPath: m_Name
@@ -776,6 +839,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483e5ec423e32499185f707aa180489e, type: 3}
+--- !u!1 &3602252385491086389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3602252387284224725, guid: 483e5ec423e32499185f707aa180489e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3602252385491086388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4065324265878497290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,8 +912,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Moose_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4065324265908955660, guid: 32fe3938b7d29477dae09cf14b0cd7c6,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32fe3938b7d29477dae09cf14b0cd7c6, type: 3}
+--- !u!1 &4065324265878497291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4065324263927691075, guid: 32fe3938b7d29477dae09cf14b0cd7c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4065324265878497290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7987436163976152327
 PrefabInstance:
   m_ObjectHideFlags: 0
