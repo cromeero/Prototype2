@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f; 
     public float xRange = 10;
     public GameObject projectilePrefab; 
+    public float forwardInput;
+    public float verticalInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         
         horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
         //Keep the player in bounds
         if (transform.position.x < -xRange){
@@ -34,5 +37,6 @@ public class PlayerController : MonoBehaviour
              Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
         }
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
     }
 }
